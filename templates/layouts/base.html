@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Male-Fashion | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/elegant-icons.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/magnific-popup.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/nice-select.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/slicknav.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main/css/style.css'%}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="{% static 'main/img/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'main/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'main/fonts/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'main/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->	
+    <link rel="stylesheet" type="text/css" href="{% static 'main/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'main/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/login.css' %}">
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+   {% include 'layouts/navbar.html' %}
+
+    {% block content %}
+        
+
+    
+    {% endblock  %}
+
+
+    {% include 'layouts/footer.html' %}
+
+   
+   
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form" action="{% url 'products:all' %}">
+                <input type="text" id="search-input" name="q" value="{{ request.GET.q }}" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'main/js/jquery-3.3.1.min.js'%}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>   
+    <script src="{% static 'main/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'main/js/jquery.nice-select.min.js'%}"></script>
+    <script src="{% static 'main/js/jquery.nicescroll.min.js'%}"></script>
+    <script src="{% static 'main/js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'main/js/jquery.countdown.min.js'%}"></script>
+    <script src="{% static 'main/js/jquery.slicknav.js'%}"></script>
+    <script src="{% static 'main/js/mixitup.min.js'%}"></script>
+    <script src="{% static 'main/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'main/js/main.js'%}"></script>
+
+          	
+<!--===============================================================================================-->	
+<script src="{% static 'main/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'main/vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'main/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'main/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+    <script src="{% static 'main/vendor/tilt/tilt.jquery.min.js' %}"></script>
+    <script >
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+<!--===============================================================================================-->
+    <script src="{% static 'main/js.login.js' %}"></script>
+
+
+
+ 
+
+
+    {% block extra_js %}
+        
+    {% endblock  %}
+</body>
+
+</html>
